@@ -1,0 +1,7 @@
+version: "3.3"
+services:
+  main:
+    image: "covid-maes:latest"
+    env_file: .env
+    volumes: 
+      - /var/run/docker.sock:/var/run/docker.sock
